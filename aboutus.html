@@ -8,12 +8,29 @@
 
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Ristorante Con Fusion</title>
 </head>
 
 <body>
-
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="#">Ristorante con Fusion</a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="./index.html" class="nav-link"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item active"><a href="#" class="nav-link"><span class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-list fa-ld"></span> Menu</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-address fa-lg"></span> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -26,7 +43,14 @@
             </div>
         </div>
     </header>
-
+    <div class="container">
+        <div class="row">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active">About Us</li>
+            </ol>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-12">
