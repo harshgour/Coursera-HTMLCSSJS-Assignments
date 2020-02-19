@@ -83,12 +83,83 @@
                     <img src="img/logo.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-sm align-self-center">
-                    <!--tooltip--><a role="button" data-toggle="tooltip" data-html="true" title="Or call us at <br><strong>+852 12345678</strong>" data-placement="bottom" class="btn btn-warning nav-link btn-sm btn-block" href="#reserve">Reserve Table</a>
+                    <!--tooltip--><a role="button" data-toggle="modal" class="btn btn-warning nav-link btn-sm btn-block" href="#reserve" data-target="#reservemodal">Reserve Table</a>
                 </div>
             </div>
         </div>
     </header>
-
+    <div id="reservemodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a Table</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group row">
+                            <label for="numOfGuests" class="col-md-2 col-form-label">Number of Guests</label>
+                            <div class="col-12 col-md-10">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="rbg" id="r1" value="1">
+                                    <label class="form-check-label" for="r1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="rbg" id="r2" value="2">
+                                    <label class="form-check-label" for="r2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="rbg" id="r3" value="3">
+                                        <label class="form-check-label" for="r3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="rbg" id="r4" value="4">
+                                        <label class="form-check-label" for="r4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="rbg" id="r5" value="5">
+                                        <label class="form-check-label" for="r5">5</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="rbg" id="r6" value="6">
+                                        <label class="form-check-label" for="r6">6</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="section" class="col-12 col-md-2 col-form-label">Section</label>
+                            <div class="col-12 col-md-3">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                                    </label>
+                                    <label class="btn btn-danger">
+                                      <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="dateandtime" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                            <div class="col-12 col-md-3">
+                                <input type="text" class="form-control"  id="date" name="date" placeholder="Date">
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <input type="text" class="form-control"  id="time" name="time" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="submit" class="btn btn-primary">
+                                    Reserve
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row row content">
             <div class="col">
@@ -177,65 +248,9 @@
                 </div>
             </div>
         </div>
-
-        <div class="row row-content" id="reserve">
-            <div class="col-2"></div>
-            <div class="col-md-8 col-12">
-                <div class="card">
-                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
-                    <div class="card-body">
-                        <form action="">
-                            <div class="form-group row">
-                                <label for="numOfGuests" class="col-md-2 col-form-label">Number of Guests</label>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="rbg" id="r1" value="1">
-                                    <label class="form-check-label" for="r1">1</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="rbg" id="r2" value="2">
-                                    <label class="form-check-label" for="r2">2</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="rbg" id="r3" value="3">
-                                        <label class="form-check-label" for="r3">3</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="rbg" id="r4" value="4">
-                                        <label class="form-check-label" for="r4">4</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="rbg" id="r5" value="5">
-                                        <label class="form-check-label" for="r5">5</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="rbg" id="r6" value="6">
-                                        <label class="form-check-label" for="r6">6</label>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="dateandtime" class="col-12 col-md-2 col-form-label">Date and Time</label>
-                                <div class="col-12 col-md-3">
-                                    <input type="text" class="form-control"  id="date" name="date" placeholder="Date">
-                                </div>
-                                <div class="col-12 col-md-3">
-                                    <input type="text" class="form-control"  id="time" name="time" placeholder="Time">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="offset-md-2 col-md-10">
-                                    <button type="submit" class="btn btn-primary">
-                                        Reserve
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <!---->
-    <div class="container">
+    <!--<div class="container">
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -338,7 +353,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <!---->
 
     <footer class="footer">
